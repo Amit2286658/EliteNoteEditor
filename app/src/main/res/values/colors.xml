@@ -1,0 +1,19 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<resources>
+    <!--<color name="colorPrimary">#F0514B</color>
+    <color name="colorPrimaryDark">#C0403C</color>
+    <color name="colorAccent">#F0514B</color>-->
+    <color name="editorColorAccent">#2D3640</color>
+    <color name="editorColorPrimaryDark">#394450</color>
+    <color name="editorColorPrimary">#2D3640</color>
+
+    <color name="color_material_grey">#616161</color>
+
+    <!--<color name="cyanea_primary_reference">#FFC0DF</color>
+    <color name="cyanea_accent_reference">#000000</color>-->
+    <color name="light_pink">#FFFF96C9</color>
+    <color name="black">#FF000000</color>
+    <color name="white_background">#fffafafa</color>
+    <color name="accent_material_">#ff009698</color>
+    <color name="primary_material_">#fff5f5f5</color>
+</resources>

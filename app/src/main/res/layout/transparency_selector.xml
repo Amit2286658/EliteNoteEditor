@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+ <SeekBar xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:id="@+id/transparency_level"
+          android:paddingTop="12dp"
+          android:paddingBottom="24dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_height="wrap_content"
+          android:max="40"
+/>
+ <LinearLayout android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:layout_marginBottom="24dp"
+ >
+  <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/transparency_dialog_cancel"
+            android:textSize="18sp"
+            android:textColor="?colorAccent"
+            android:gravity="start"
+            android:text="Cancel"
+  />
+  <TextView android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="?colorAccent"
+            android:text="Accept"
+            android:textSize="18sp"
+            android:id="@+id/transparency_dialog_ok"
+            android:gravity="end"
+            android:layout_height="wrap_content"/>
+ </LinearLayout>
+</LinearLayout>

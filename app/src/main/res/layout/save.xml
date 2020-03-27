@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saveAsPicture"
+        android:textSize="14sp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:padding="6dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:id="@+id/save_as_picture"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_image_black_24dp"
+        android:drawablePadding="8dp"
+        tools:targetApi="lollipop" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="?android:attr/listDivider"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="6dp"
+        android:text="@string/saveAsHtml"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="14sp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:id="@+id/save_as_html"
+        android:drawableStart="@drawable/ic_html"
+        android:gravity="center_vertical"
+        android:drawablePadding="8dp"
+        tools:targetApi="lollipop" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="?android:attr/listDivider"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="@string/saveAsText"
+        android:textSize="14sp"
+        android:id="@+id/save_as_text"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/ic_text_fields_grey_24dp"
+        android:drawablePadding="8dp"
+        tools:targetApi="lollipop" />
+
+</LinearLayout>

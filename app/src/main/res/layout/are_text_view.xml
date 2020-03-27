@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<com.chinalwb.are.render.AreTextView
+        android:layout_width="match_parent"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+        android:textSize="16sp"
+        android:id="@+id/editActivityRecyclerContent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/editActivityRecyclerContent_image"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/play"
+        android:id="@+id/editActivityRecyclerContent_video_icon"
+        />
+</FrameLayout>

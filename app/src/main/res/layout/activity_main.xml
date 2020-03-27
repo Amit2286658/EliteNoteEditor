@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.me.android.noteeditor.MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="?actionBarTheme"
+            android:id="@+id/mainAppBar">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+        >
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <com.google.android.material.tabs.TabLayout
+                    android:layout_width="196dp"
+                    android:layout_gravity="start"
+                    android:background="@android:color/transparent"
+                    app:tabTextColor="?android:attr/textColorPrimary"
+                    app:tabSelectedTextColor="?colorAccent"
+                    android:id="@+id/tab_layout"
+                    app:tabIndicatorColor="?colorAccent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <!--<androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/second_toolbar"
+            android:layout_height="?attr/actionBarSize">
+
+            <include layout="@layout/custom_search_view"
+                android:visibility="gone"
+                android:id="@+id/custom_search_view"
+                />
+        </androidx.appcompat.widget.Toolbar>-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_viewpager_id"
+    />
+
+    <!--<include layout="@layout/content_main"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_add_black_24dp"/>-->
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationItemView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_navigation_menu"
+            android:id="@+id/bottom_navigation_menu"
+    />-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

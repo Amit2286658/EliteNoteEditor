@@ -1,0 +1,148 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#F0514B</item>
+        <item name="colorPrimaryDark">#C0403C</item>
+        <item name="colorAccent">#F0514B</item>
+    </style>
+
+    <!--custom style attributes-->
+    <style name="AppTheme_NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">#F0514B</item>
+        <item name="colorPrimaryDark">#C0403C</item>
+        <item name="colorAccent">#F0514B</item>
+        <item name="android:tint">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColor">#000000</item>
+        <item name="alertDialogTheme">@style/DialogTheme</item>
+        <item name="android:popupTheme">@style/AppTheme.PopupOverlay</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DarkActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#F0514B</item>
+    </style>
+
+    <!--custom style for editing activity-->
+    <style name="DarkActionBarCustomTheme" parent="AppTheme_NoActionBar">
+        <item name="colorPrimary">@color/editorColorPrimary</item>
+        <item name="colorPrimaryDark">@color/editorColorPrimaryDark</item>
+        <item name="colorAccent">@color/editorColorAccent</item>
+        <item name="alertDialogTheme">@style/DialogEditingTheme</item>
+    </style>
+
+    <style name="DialogEditingTheme" parent="DialogTheme">
+        <item name="colorAccent">@color/editorColorAccent</item>
+    </style>
+
+    <!--theme for alert dialog,-->
+    <style name="AlertDialogthemeLight" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/editorColorAccent</item>
+    </style>
+    <style name="AlertDialogThemeDark" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/editorColorAccent</item>
+    </style>
+
+    <!--custom theme for addingDataActivity-->
+    <style name="customTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/editorColorPrimary</item>
+        <item name="colorPrimaryDark">@color/editorColorPrimaryDark</item>
+        <item name="colorAccent">@color/editorColorAccent</item>
+    </style>
+
+    <style name="overflow_text" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:colorAccent">?colorAccent</item>
+    </style>
+
+    <!--overlay themes (not in use anymore)-->
+    <style name="AppTheme_AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">#F0514B</item>
+        <item name="colorPrimaryDark">#C0403C</item>
+    </style>
+    <style name="customAppTheme" parent="AppTheme_AppBarOverlay">
+        <item name="colorPrimary">@color/editorColorPrimary</item>
+        <item name="colorPrimaryDark">@color/editorColorPrimaryDark</item>
+    </style>
+
+    <!--toolbar theme(no need to change, used only in custom theme)-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!--Themes to be used when user changes the configuration-->
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="DarkTheme" parent="Theme.AppCompat.NoActionBar"/>
+    <style name="LightTheme_ActionBar" parent="Theme.AppCompat.Light"/>
+    <style name="DarkTheme_ActionBar" parent="Theme.AppCompat"/>
+    <style name="LightBaseTheme" parent="Theme.AppCompat.Light"/>
+    <style name="DarkBaseTheme" parent="Theme.AppCompat"/>
+
+    <!--theme for spinner(Not in use anymore)-->
+    <style name="spinner_theme" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/color_material_grey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="TextAppearanceLarge">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="general_preference_title">
+        <item name="android:paddingTop">14dp</item>
+        <!--<item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>-->
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="general_preference_subtitle">
+        <!--<item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>-->
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="customSettingIconStyle">
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="dividerStyle">
+        <item name="android:background">?android:attr/listDivider</item>
+        <item name="android:layout_marginStart">56dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="transparentDialogStyle">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="editingActivityMenuIcons" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="DialogAnimation" parent="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+    <style name="dialog_alpha_animation" parent="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="idleContentPadding">8dp</dimen>
+    <dimen name="idleTitlePadding">12dp</dimen>
+    <dimen name="idlePadding_forAbout">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="pop_menu_item_padding">12dp</dimen>
+</resources>

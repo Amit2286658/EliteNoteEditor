@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:title="Edit"
+            android:id="@+id/popupMenu_edit"
+    />
+    <item
+        android:title="Delete"
+        android:id="@+id/popupMenu_delete"
+    />
+    <item
+        android:title="Share"
+        android:id="@+id/popupMenu_share"
+    />
+    <item
+        android:title="Edit title"
+        android:id="@+id/popupMenu_editTitle"
+    />
+
+</menu>

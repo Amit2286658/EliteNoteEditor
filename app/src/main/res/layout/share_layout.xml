@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/share"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/shareAsPicture"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:id="@+id/share_as_picture"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:textColor="?android:attr/textColorPrimary"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        tools:ignore="NewApi" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/share_layout_divider"
+        android:background="?android:attr/listDivider"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        tools:ignore="NewApi"
+        android:layout_height="wrap_content"
+        android:id="@+id/share_as_html_text"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:text="@string/shareAsText"/>
+
+</LinearLayout>

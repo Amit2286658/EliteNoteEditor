@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent"
+        tools:context="com.me.android.noteeditor.editingActivity">
+
+    <!--<com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/editingAppBar">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/editingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+        />
+
+    </com.google.android.material.appbar.AppBarLayout>-->
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:theme="?actionBarTheme"
+            android:id="@+id/editingActivityAppBar"
+            android:layout_height="184dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout 
+                android:layout_width="match_parent"
+                app:expandedTitleMarginBottom="82dp"
+                android:id="@+id/editingActivityCollapsingToolbar"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="33dp"
+                    android:paddingRight="33dp"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.8"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/editingActivityCollapsingToolbarTextView"
+                      android:textSize="12sp"
+                      android:text="sampleText"
+                      android:textColor="?android:textColorPrimary"
+            />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/editingActivityCollapsingToolbarTextView"
+                    android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton style="@style/editingActivityMenuIcons"
+                           android:layout_width="42dp"
+                           android:layout_height="60dp"
+                    app:icon="@drawable/ic_delete_black_24dp_primary_color"
+                    app:iconTint="?android:attr/textColorPrimary"
+                           android:id="@+id/delete_editingActivity_image"
+                           android:paddingTop="18dp"
+                           android:paddingEnd="18dp"
+                           android:paddingBottom="18dp"
+                           android:paddingStart="0dp"
+                />
+                <com.google.android.material.button.MaterialButton style="@style/editingActivityMenuIcons"
+                           android:id="@+id/editTitle_editingActivity_image"
+                    app:iconTint="?android:attr/textColorPrimary"
+                    app:icon="@drawable/ic_edit_black_24dp_primary_color"
+                />
+                <com.google.android.material.button.MaterialButton style="@style/editingActivityMenuIcons"
+                    app:icon="@drawable/ic_share_black_24dp_primary_color"
+                    app:iconTint="?android:attr/textColorPrimary"
+                           android:id="@+id/shareNote_editingActivity_image"
+                />
+                <com.google.android.material.button.MaterialButton style="@style/editingActivityMenuIcons"
+                    app:icon="@drawable/ic_insert_drive_file_black_24dp"
+                    app:iconTint="?android:attr/textColorPrimary"
+                           android:id="@+id/write_to_file_editingActivity_image"
+                />
+                <!--<ImageView android:layout_width="28dp"
+                           android:layout_height="28dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/ic_folder_open_black_24dp"
+                           android:layout_marginEnd="16dp"
+                />-->
+            </LinearLayout>
+            </RelativeLayout>
+            <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:id="@+id/editingActivityToolBar"
+                    app:layout_collapseMode="pin"
+                    android:layout_height="?attr/actionBarSize"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_margin="4dp"
+            app:cardElevation="6dp"
+            android:id="@+id/editing_activity_card_view"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/content_editing"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_gravity="bottom|center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/new_ad_unit_id"/>
+    <!--ca-app-pub-3940256099942544/6300978111-->
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            app:layout_anchor="@id/editingActivityAppBar"
+            app:layout_anchorGravity="bottom|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_edit_black_24dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

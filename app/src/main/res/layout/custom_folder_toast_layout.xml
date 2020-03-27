@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:id="@+id/contextual_folder_item_container_linear_layout"
+>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="folderName"
+            android:id="@+id/custom_popup_toast_folderName"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+    />
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Icon"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/popup_menu_edit_item"
+            android:text="@string/rename"
+            android:textSize="12sp"
+            android:drawablePadding="6dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/folder_popup_toast_rename"
+    />
+    <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Icon"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/popup_menu_delete_item"
+            android:text="@string/confirm_delete"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/folder_popup_toast_delete"
+    />
+</LinearLayout>
+</LinearLayout>

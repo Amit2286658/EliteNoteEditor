@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Text"
+    >
+        <com.me.android.noteeditor.customSettings.textSizeSelector
+                android:title="Content text size"
+                android:defaultValue="1"
+                android:key="@string/custom_text_size_key"
+                android:summary="Set the size of the content text"
+        />
+        <com.me.android.noteeditor.customSettings.fontPicker
+                android:title="font"
+                android:summary="set the font"
+                android:key="@string/font_preference_key"
+                android:defaultValue="Aller_Lt"
+        />
+        <!--<CheckBoxPreference
+                android:title="Wrap content"
+                android:summary="wrap the text content"
+                android:key="@string/wrap_content_preference_key"
+                android:defaultValue="true"
+                android:icon="@drawable/ic_format_align_center_black_24dp"
+        />-->
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="Themes and colors"
+    >
+        <com.me.android.noteeditor.customSettings.themeSelector
+                android:title="Select theme"
+                android:defaultValue="1"
+                android:key="@string/customThemeChangekey"
+                android:summary="select theme"
+        />
+        <Preference
+                android:key="@string/color_preference_key"
+                android:title="More themes"
+                android:icon="@drawable/ic_color_lens_grey_24dp"
+                android:dialogIcon="@drawable/ic_color_lens_grey_24dp"
+                android:summary="More predefined themes">
+        </Preference>>
+        <Preference
+                android:key="@string/color_accent_preference_key"
+                android:title="Theme Configuration"
+                android:summary="Customize the current theme"
+                android:dialogIcon="@drawable/ic_colorize_grey_24dp"
+                android:icon="@drawable/ic_colorize_grey_24dp"
+        />
+        <com.me.android.noteeditor.customSettings.transparencySelector
+            android:key="@string/cardView_transparency_key"
+            android:title="Transparency"
+            android:summary="Enable transparency on list items"
+            android:defaultValue="0"
+            android:icon="@drawable/ic_format_color_fill_black_24dp"
+            android:dialogIcon="@drawable/ic_format_color_fill_black_24dp"
+        />
+        <!--<Preference
+                android:key="@string/image_selection_preference"
+                android:title="Custom Background"
+                android:summary="Select a custom background image"
+                android:icon="@drawable/ic_image_black_24dp"
+            />-->
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About"
+    >
+        <Preference
+            android:key="@string/about_preference_key"
+            android:title="About"
+            android:icon="@drawable/ic_info_black_24dp"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
